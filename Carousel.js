@@ -1,5 +1,6 @@
 class Carousel {
     constructor(){
+        console.log("Carousel container")
         this.carouselContainer = document.querySelector(".carousel-container");
         this.track = document.querySelector(".track");
         this.items = document.querySelectorAll(".carousel-item");
@@ -33,12 +34,13 @@ class Carousel {
     slideHalf(e,positionX){
         const currentX = positionX;
         const diff = currentX - this.start; 
-
-        if(this.started && (diff > this.threshold || diff < -this.threshold)){
+        const disable = this.carouselContainer.offsetWidth >= this.track.offsetWidth; 
+        if(!disable && this.started && (diff > this.threshold || diff < -this.threshold) ){
             this.moving = true;
         }
 
         if(this.moving){
+         
             const max = this.track.offsetWidth - this.items[0].offsetWidth; 
             const slideW = this.start < currentX ? this.items[0].offsetWidth : -this.items[0].offsetWidth; 
 
@@ -59,22 +61,28 @@ class Carousel {
     goLeft(){
     
         const max = this.track.offsetWidth; 
+        console.log("MAX ",max);
         const multiplier = Math.floor(this.carouselContainer.offsetWidth/this.items[0].offsetWidth);
-       const step = this.items[0].offsetWidth * multiplier; 
+        const step = this.items[0].offsetWidth * multiplier; 
         let move = this.prevX - step; 
         const nextMove = move - step; 
+        console.log("move ", step);
 
         if(move > -max){
-            this.right = true; 
+            console.log("MOVEMOVE")
+         
 
             if(nextMove < -max || nextMove === -max){
                 move = -max + this.carouselContainer.offsetWidth; 
+                console.log("MOVE 2 ", move)
             }
 
             this.slideX = move; 
             this.prevX = this.slideX; 
             this.slideCards()
 
+        }else{
+            console.log("DONT MOVE")
         }
      
     }
@@ -89,6 +97,7 @@ class Carousel {
         }
 
         if(move < this.items[0].offsetWidth){ 
+            console.log("MOVE RIGHT")
             this.slideX = move; 
             this.prevX = this.slideX; 
             this.slideCards(); 
