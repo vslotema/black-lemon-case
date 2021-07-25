@@ -64,6 +64,7 @@ button{
   margin-right:1rem; 
   display:flex; 
   flex-direction: column;
+  z-index: 10;
 }
 
 .type-block{
@@ -242,7 +243,7 @@ button{
 
   .njord-img-wrapper{
     width: 45%;
-    max-width: 800px;
+    max-width: 700px;
   } 
 
 
