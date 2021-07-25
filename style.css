@@ -176,6 +176,11 @@ button{
   color: #777777;
 }
 
+
+.track{
+  transition: transform 0.5s ease-in; 
+}
+
 @media screen and (min-width:768px) {
 
   .header{
