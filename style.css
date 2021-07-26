@@ -41,7 +41,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: flex-between;
-  overflow-x: hidden;
 }
 
 .header-bg-mob {
@@ -229,7 +228,7 @@ button {
 
   .njord-img-wrapper {
     width: 45%;
-    max-width: 700px;
+    max-width: 750px;
   }
 
   .type-block {
@@ -256,7 +255,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1550px) {
   h1 {
     font-size: 3rem;
   }
