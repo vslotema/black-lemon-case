@@ -110,6 +110,7 @@ const carousel = new Carousel();
 carousel.carouselContainer.addEventListener(
   "touchstart",
   (e) => {
+    document.querySelector("body").style.overflow = "hidden";
     carousel.swipeStart(e.touches[0].pageX);
   },
   { passive: true }
@@ -118,6 +119,7 @@ carousel.carouselContainer.addEventListener(
 carousel.carouselContainer.addEventListener(
   "touchend",
   (e) => {
+    document.querySelector("body").style.overflow = "auto";
     carousel.swipeEnd(e.changedTouches[0].pageX);
   },
   { passive: true }

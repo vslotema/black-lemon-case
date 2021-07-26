@@ -41,6 +41,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: flex-between;
+  overflow-x: hidden;
 }
 
 .header-bg-mob {
