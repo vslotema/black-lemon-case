@@ -6,14 +6,13 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #333333;
 }
 
 h1 {
   font-family: "Merriweather", serif;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1.125rem;
 }
 
@@ -23,14 +22,31 @@ h1 {
 
 h3 {
   font-size: 1rem;
+  font-weight: 400;
 }
 
 p {
   font-size: 0.8125rem;
+  line-height: 160%;
+}
+
+
+.font-medium{
+  font-weight: 500;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-black{
+  font-weight: 900;
 }
 
 button {
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  width: 9.625rem; 
   border-radius: 2rem;
   border: none;
   transition: all 0.2s ease-in-out;
@@ -65,9 +81,11 @@ button {
 
 .type-block {
   font-size: 0.875rem;
-  padding-top: 0.725rem;
-  padding-bottom: 0.725rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
 }
+
 
 .tags-container {
   display: inline-flex;
@@ -78,7 +96,6 @@ button {
   padding: 0.5rem 1rem 0.5rem 1rem;
   border: 2px solid #333333;
   margin-bottom: 0.5rem;
-  font-weight: 600;
   border-radius: 1.5rem;
   width: fit-content;
 }
@@ -94,13 +111,16 @@ button {
 
 .product-info-title {
   font-size: 1rem;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1%;
+  margin-top:1.9374rem;
+  margin-bottom: 1.1875rem;
 }
 
 .price {
-  font-weight: bold;
   font-size: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.625rem;
+  padding-bottom: 0.875rem;
 }
 
 .btns-container {
@@ -112,7 +132,10 @@ button {
   margin-right: 0.5rem;
   background: #de803d;
   color: white;
-  font-weight: bold;
+}
+
+.btn-test * {
+  display: none; 
 }
 
 .btn-test:hover {
@@ -121,7 +144,6 @@ button {
 
 .btn-add-to-cart {
   background: #bfe5c2;
-  font-weight: bold;
 }
 .btn-add-to-cart:hover {
   background: #99f1a1;
@@ -129,7 +151,7 @@ button {
 
 .carousel-container {
   overflow-x: hidden;
-  margin-top: 2rem;
+  margin-top: 2.3125rem;
   margin-bottom: 2rem;
   margin-left: 1rem;
 }
@@ -141,7 +163,7 @@ button {
 }
 
 .carousel-item {
-  padding-right: 0.5rem;
+  padding-right: 8px;
 }
 
 .specs-wrapper {
@@ -167,7 +189,7 @@ button {
 }
 
 .track {
-  transition: transform 0.5s ease-in;
+  transition: transform 0.25s ease-in;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,6 +201,8 @@ button {
     padding-right: 3rem;
     padding-left: 3rem;
   }
+
+
 
   .header-bg-desk {
     background: url("images\\FishOil.png");
@@ -252,6 +276,10 @@ button {
 
   button {
     width: 100%;
+  }
+
+  .btn-test * {
+    display: inline-block; 
   }
 }
 
