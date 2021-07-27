@@ -64,14 +64,14 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: 350px;
   width: 100%;
 
   position: relative;
 }
 
 .introduction-container {
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
   margin-left: 1rem;
   margin-right: 1rem;
   display: flex;
