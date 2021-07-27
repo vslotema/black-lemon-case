@@ -23,6 +23,8 @@ h1 {
 h3 {
   font-size: 1rem;
   font-weight: 400;
+  margin-top:0.5rem; 
+ 
 }
 
 p {
@@ -80,7 +82,7 @@ button {
 
 .type-block {
   font-size: 0.875rem;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
   padding-bottom: 1rem;
 }
 
@@ -90,11 +92,15 @@ button {
 }
 
 .tag {
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  
   border: 2px solid #333333;
   margin-bottom: 0.5rem;
   border-radius: 1.5rem;
   width: fit-content;
+}
+
+.tag.brain, .tag.fish{
+  padding: 0.4rem 1rem 0.3rem 1rem;
 }
 
 .njord-img-wrapper {
@@ -110,14 +116,19 @@ button {
   font-size: 1rem;
   font-family: "Merriweather", serif;
   letter-spacing: 1%;
+<<<<<<< HEAD
   margin-top: 1.9374rem;
   margin-bottom: 1.1875rem;
+=======
+  margin-top:1.1rem;
+  margin-bottom: 0.9rem;
+>>>>>>> 0b634215368386e95562c17e8d87222c0cebc98c
 }
 
 .price {
   font-size: 2rem;
-  padding-top: 1.625rem;
-  padding-bottom: 0.875rem;
+  padding-bottom: 1.125rem;
+  padding-top: 0.875rem;
 }
 
 .btns-container {
@@ -129,6 +140,7 @@ button {
   margin-right: 0.5rem;
   background: #de803d;
   color: white;
+  font-weight: 700;
 }
 
 .btn-test * {
@@ -141,6 +153,7 @@ button {
 
 .btn-add-to-cart {
   background: #bfe5c2;
+  font-weight: 700;
 }
 .btn-add-to-cart:hover {
   background: #99f1a1;
@@ -160,7 +173,7 @@ button {
 }
 
 .carousel-item {
-  padding-right: 8px;
+  padding-right: 0.5rem;
 }
 
 .specs-wrapper {
@@ -171,10 +184,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom:1.125rem; 
 }
 
 .icon-wrapper {
-  padding-top: 0.4rem;
+  padding-top: 1.25rem;
 }
 
 .specs-wrapper .text-green {
@@ -194,7 +208,7 @@ button {
     height: 80vh;
     position: relative;
     justify-content: flex-end;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
     padding-right: 3rem;
     padding-left: 3rem;
   }
@@ -232,17 +246,22 @@ button {
   }
 }
 
+
+
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: 2rem;
   }
-
-  p {
-    font-size: 0.875rem;
-  }
-
   .tag {
     font-size: 0.8rem;
+  }
+
+  .tag.brain{
+    padding: 0.4rem 2rem 0.3rem 2rem;
+  }
+
+  .introduction-container p {
+    font-size:0.875rem; 
   }
 
   .njord-img-wrapper {
@@ -276,8 +295,24 @@ button {
   .btn-test * {
     display: inline-block;
   }
+
+  .btn-test, .btn-add-to-cart {
+   font-weight: 500;
+   font-size:1rem;
+  }
+  
+
+
+  .price{
+    padding-bottom:1.5rem; 
+  }
+
+  .carousel-item{
+    padding-right:0.9rem; 
+  }
 }
 
+/*
 @media screen and (min-width: 1550px) {
   h1 {
     font-size: 3rem;
@@ -323,3 +358,4 @@ button {
     width: 11rem;
   }
 }
+*/
