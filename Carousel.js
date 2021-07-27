@@ -132,3 +132,30 @@ carousel.carouselContainer.addEventListener(
   },
   { passive: true }
 );
+
+carousel.carouselContainer.addEventListener(
+  "mousedown",
+  (e) => {
+    document.querySelector("body").style.overflow = "hidden";
+    carousel.swipeStart(e.pageX);
+  },
+  { passive: true }
+);
+
+carousel.carouselContainer.addEventListener(
+  "mouseup",
+  (e) => {
+    document.querySelector("body").style.overflow = "auto";
+    carousel.swipeEnd(e.pageX);
+  },
+  { passive: true }
+);
+
+carousel.carouselContainer.addEventListener(
+  "mousemove",
+  (e) => {
+    carousel.slideHalf(e, e.pageX);
+  },
+  { passive: true }
+);
+
