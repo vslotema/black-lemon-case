@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333333;
 }
 
@@ -30,23 +30,22 @@ p {
   line-height: 160%;
 }
 
-
-.font-medium{
+.font-medium {
   font-weight: 500;
 }
 
-.font-bold{
+.font-bold {
   font-weight: 700;
 }
 
-.font-black{
+.font-black {
   font-weight: 900;
 }
 
 button {
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
-  width: 9.625rem; 
+  width: 9.625rem;
   border-radius: 2rem;
   border: none;
   transition: all 0.2s ease-in-out;
@@ -83,9 +82,7 @@ button {
   font-size: 0.875rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-
 }
-
 
 .tags-container {
   display: inline-flex;
@@ -113,7 +110,7 @@ button {
   font-size: 1rem;
   font-family: "Merriweather", serif;
   letter-spacing: 1%;
-  margin-top:1.9374rem;
+  margin-top: 1.9374rem;
   margin-bottom: 1.1875rem;
 }
 
@@ -135,7 +132,7 @@ button {
 }
 
 .btn-test * {
-  display: none; 
+  display: none;
 }
 
 .btn-test:hover {
@@ -201,8 +198,6 @@ button {
     padding-right: 3rem;
     padding-left: 3rem;
   }
-
-
 
   .header-bg-desk {
     background: url("images\\FishOil.png");
@@ -279,7 +274,7 @@ button {
   }
 
   .btn-test * {
-    display: inline-block; 
+    display: inline-block;
   }
 }
 
